@@ -1,0 +1,10 @@
+github "ReactiveX/RxSwift"
+github "RxSwiftCommunity/RxSwiftExt"
+github "RxSwiftCommunity/Action"
+github "RxSwiftCommunity/NSObject-Rx"
+github "RxSwiftCommunity/RxDataSources"
+
+github "Swinject/Swinject"
+github "Swinject/SwinjectAutoregistration"
+
+github "Moya/Moya" ~> 14.0

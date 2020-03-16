@@ -13,7 +13,71 @@
 		B388B9FE241FFC1A008A7E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B388B9FC241FFC1A008A7E7A /* Main.storyboard */; };
 		B388BA00241FFC1C008A7E7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B388B9FF241FFC1C008A7E7A /* Assets.xcassets */; };
 		B388BA03241FFC1C008A7E7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B388BA01241FFC1C008A7E7A /* LaunchScreen.storyboard */; };
+		B388BA202420132A008A7E7A /* NSObject_Rx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA0F2420132A008A7E7A /* NSObject_Rx.framework */; };
+		B388BA212420132A008A7E7A /* NSObject_Rx.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA0F2420132A008A7E7A /* NSObject_Rx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B388BA222420132A008A7E7A /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA102420132A008A7E7A /* RxMoya.framework */; };
+		B388BA232420132A008A7E7A /* RxMoya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA102420132A008A7E7A /* RxMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B388BA242420132A008A7E7A /* Action.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA112420132A008A7E7A /* Action.framework */; };
+		B388BA252420132A008A7E7A /* Action.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA112420132A008A7E7A /* Action.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B388BA262420132A008A7E7A /* RxSwiftExt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA122420132A008A7E7A /* RxSwiftExt.framework */; };
+		B388BA272420132A008A7E7A /* RxSwiftExt.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA122420132A008A7E7A /* RxSwiftExt.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B388BA282420132A008A7E7A /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA132420132A008A7E7A /* Moya.framework */; };
+		B388BA292420132A008A7E7A /* Moya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA132420132A008A7E7A /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B388BA2A2420132A008A7E7A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA142420132A008A7E7A /* RxCocoa.framework */; };
+		B388BA2B2420132A008A7E7A /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA142420132A008A7E7A /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B388BA2C2420132A008A7E7A /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA152420132A008A7E7A /* ReactiveSwift.framework */; };
+		B388BA2D2420132A008A7E7A /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA152420132A008A7E7A /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B388BA2E2420132A008A7E7A /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA162420132A008A7E7A /* ReactiveMoya.framework */; };
+		B388BA2F2420132A008A7E7A /* ReactiveMoya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA162420132A008A7E7A /* ReactiveMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B388BA302420132A008A7E7A /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA172420132A008A7E7A /* RxDataSources.framework */; };
+		B388BA312420132A008A7E7A /* RxDataSources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA172420132A008A7E7A /* RxDataSources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B388BA322420132B008A7E7A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA182420132A008A7E7A /* RxSwift.framework */; };
+		B388BA332420132B008A7E7A /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA182420132A008A7E7A /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B388BA342420132B008A7E7A /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA192420132A008A7E7A /* RxRelay.framework */; };
+		B388BA352420132B008A7E7A /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA192420132A008A7E7A /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B388BA362420132B008A7E7A /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA1A2420132A008A7E7A /* Swinject.framework */; };
+		B388BA372420132B008A7E7A /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA1A2420132A008A7E7A /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B388BA382420132B008A7E7A /* SwinjectAutoregistration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA1B2420132A008A7E7A /* SwinjectAutoregistration.framework */; };
+		B388BA392420132B008A7E7A /* SwinjectAutoregistration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA1B2420132A008A7E7A /* SwinjectAutoregistration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B388BA3A2420132B008A7E7A /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA1C2420132A008A7E7A /* Differentiator.framework */; };
+		B388BA3B2420132B008A7E7A /* Differentiator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA1C2420132A008A7E7A /* Differentiator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B388BA3C2420132B008A7E7A /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA1D2420132A008A7E7A /* RxTest.framework */; };
+		B388BA3D2420132B008A7E7A /* RxTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA1D2420132A008A7E7A /* RxTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B388BA3E2420132B008A7E7A /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA1E2420132A008A7E7A /* RxBlocking.framework */; };
+		B388BA3F2420132B008A7E7A /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA1E2420132A008A7E7A /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B388BA402420132B008A7E7A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA1F2420132A008A7E7A /* Alamofire.framework */; };
+		B388BA412420132B008A7E7A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA1F2420132A008A7E7A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B388BA422420132B008A7E7A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B388BA3B2420132B008A7E7A /* Differentiator.framework in Embed Frameworks */,
+				B388BA392420132B008A7E7A /* SwinjectAutoregistration.framework in Embed Frameworks */,
+				B388BA332420132B008A7E7A /* RxSwift.framework in Embed Frameworks */,
+				B388BA3F2420132B008A7E7A /* RxBlocking.framework in Embed Frameworks */,
+				B388BA412420132B008A7E7A /* Alamofire.framework in Embed Frameworks */,
+				B388BA312420132A008A7E7A /* RxDataSources.framework in Embed Frameworks */,
+				B388BA2B2420132A008A7E7A /* RxCocoa.framework in Embed Frameworks */,
+				B388BA2D2420132A008A7E7A /* ReactiveSwift.framework in Embed Frameworks */,
+				B388BA272420132A008A7E7A /* RxSwiftExt.framework in Embed Frameworks */,
+				B388BA2F2420132A008A7E7A /* ReactiveMoya.framework in Embed Frameworks */,
+				B388BA3D2420132B008A7E7A /* RxTest.framework in Embed Frameworks */,
+				B388BA292420132A008A7E7A /* Moya.framework in Embed Frameworks */,
+				B388BA232420132A008A7E7A /* RxMoya.framework in Embed Frameworks */,
+				B388BA252420132A008A7E7A /* Action.framework in Embed Frameworks */,
+				B388BA372420132B008A7E7A /* Swinject.framework in Embed Frameworks */,
+				B388BA212420132A008A7E7A /* NSObject_Rx.framework in Embed Frameworks */,
+				B388BA352420132B008A7E7A /* RxRelay.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B388B9F3241FFC1A008A7E7A /* VNGRS-MovieAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VNGRS-MovieAPP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +88,23 @@
 		B388B9FF241FFC1C008A7E7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B388BA02241FFC1C008A7E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B388BA04241FFC1C008A7E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B388BA0F2420132A008A7E7A /* NSObject_Rx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NSObject_Rx.framework; path = Carthage/Build/iOS/NSObject_Rx.framework; sourceTree = "<group>"; };
+		B388BA102420132A008A7E7A /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
+		B388BA112420132A008A7E7A /* Action.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Action.framework; path = Carthage/Build/iOS/Action.framework; sourceTree = "<group>"; };
+		B388BA122420132A008A7E7A /* RxSwiftExt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwiftExt.framework; path = Carthage/Build/iOS/RxSwiftExt.framework; sourceTree = "<group>"; };
+		B388BA132420132A008A7E7A /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		B388BA142420132A008A7E7A /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		B388BA152420132A008A7E7A /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		B388BA162420132A008A7E7A /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
+		B388BA172420132A008A7E7A /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxDataSources.framework; path = Carthage/Build/iOS/RxDataSources.framework; sourceTree = "<group>"; };
+		B388BA182420132A008A7E7A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		B388BA192420132A008A7E7A /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		B388BA1A2420132A008A7E7A /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		B388BA1B2420132A008A7E7A /* SwinjectAutoregistration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectAutoregistration.framework; path = Carthage/Build/iOS/SwinjectAutoregistration.framework; sourceTree = "<group>"; };
+		B388BA1C2420132A008A7E7A /* Differentiator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Differentiator.framework; path = Carthage/Build/iOS/Differentiator.framework; sourceTree = "<group>"; };
+		B388BA1D2420132A008A7E7A /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		B388BA1E2420132A008A7E7A /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		B388BA1F2420132A008A7E7A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +112,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B388BA3A2420132B008A7E7A /* Differentiator.framework in Frameworks */,
+				B388BA382420132B008A7E7A /* SwinjectAutoregistration.framework in Frameworks */,
+				B388BA322420132B008A7E7A /* RxSwift.framework in Frameworks */,
+				B388BA3E2420132B008A7E7A /* RxBlocking.framework in Frameworks */,
+				B388BA402420132B008A7E7A /* Alamofire.framework in Frameworks */,
+				B388BA302420132A008A7E7A /* RxDataSources.framework in Frameworks */,
+				B388BA2A2420132A008A7E7A /* RxCocoa.framework in Frameworks */,
+				B388BA2C2420132A008A7E7A /* ReactiveSwift.framework in Frameworks */,
+				B388BA262420132A008A7E7A /* RxSwiftExt.framework in Frameworks */,
+				B388BA2E2420132A008A7E7A /* ReactiveMoya.framework in Frameworks */,
+				B388BA3C2420132B008A7E7A /* RxTest.framework in Frameworks */,
+				B388BA282420132A008A7E7A /* Moya.framework in Frameworks */,
+				B388BA222420132A008A7E7A /* RxMoya.framework in Frameworks */,
+				B388BA242420132A008A7E7A /* Action.framework in Frameworks */,
+				B388BA362420132B008A7E7A /* Swinject.framework in Frameworks */,
+				B388BA202420132A008A7E7A /* NSObject_Rx.framework in Frameworks */,
+				B388BA342420132B008A7E7A /* RxRelay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +140,7 @@
 			children = (
 				B388B9F5241FFC1A008A7E7A /* VNGRS-MovieAPP */,
 				B388B9F4241FFC1A008A7E7A /* Products */,
+				B388BA0E2420132A008A7E7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +166,30 @@
 			path = "VNGRS-MovieAPP";
 			sourceTree = "<group>";
 		};
+		B388BA0E2420132A008A7E7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B388BA112420132A008A7E7A /* Action.framework */,
+				B388BA1F2420132A008A7E7A /* Alamofire.framework */,
+				B388BA1C2420132A008A7E7A /* Differentiator.framework */,
+				B388BA132420132A008A7E7A /* Moya.framework */,
+				B388BA0F2420132A008A7E7A /* NSObject_Rx.framework */,
+				B388BA162420132A008A7E7A /* ReactiveMoya.framework */,
+				B388BA152420132A008A7E7A /* ReactiveSwift.framework */,
+				B388BA1E2420132A008A7E7A /* RxBlocking.framework */,
+				B388BA142420132A008A7E7A /* RxCocoa.framework */,
+				B388BA172420132A008A7E7A /* RxDataSources.framework */,
+				B388BA102420132A008A7E7A /* RxMoya.framework */,
+				B388BA192420132A008A7E7A /* RxRelay.framework */,
+				B388BA182420132A008A7E7A /* RxSwift.framework */,
+				B388BA122420132A008A7E7A /* RxSwiftExt.framework */,
+				B388BA1D2420132A008A7E7A /* RxTest.framework */,
+				B388BA1A2420132A008A7E7A /* Swinject.framework */,
+				B388BA1B2420132A008A7E7A /* SwinjectAutoregistration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +200,7 @@
 				B388B9EF241FFC1A008A7E7A /* Sources */,
 				B388B9F0241FFC1A008A7E7A /* Frameworks */,
 				B388B9F1241FFC1A008A7E7A /* Resources */,
+				B388BA422420132B008A7E7A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,6 +410,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UMRUR4ZKT4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "VNGRS-MovieAPP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -304,6 +432,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UMRUR4ZKT4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "VNGRS-MovieAPP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
