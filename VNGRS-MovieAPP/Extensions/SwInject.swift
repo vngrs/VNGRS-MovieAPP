@@ -20,5 +20,6 @@ extension Container {
     //TODO: register real services.
     private static func registerMockServices(into container: Container) {
         container.autoregister(MovieMock.self, initializer: MovieMock.init)
+        container.autoregister(MovieService.self, initializer: MovieMockService.init)
     }
 }

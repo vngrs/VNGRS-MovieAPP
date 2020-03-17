@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import RxDataSources
 
 struct Movie: Codable {
+    let id: String
     let popularity: Double
     let voteCount: Int
     let posterPath: String?
@@ -17,6 +19,7 @@ struct Movie: Codable {
     let releaseDate: String
 
     enum CodingKeys: String, CodingKey {
+        case id
         case popularity
         case voteCount = "vote_count"
         case posterPath = "poster_path"
@@ -25,3 +28,11 @@ struct Movie: Codable {
         case releaseDate = "release_date"
     }
 }
+
+extension Movie: IdentifiableType {
+    var identity: String { id }
+
+    typealias Identity = String
+}
+extension Movie: Equatable { }
+

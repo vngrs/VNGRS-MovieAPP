@@ -7,20 +7,21 @@
 //
 
 import Foundation
+import Kingfisher
 import UIKit
 
 class MovieCell: UITableViewCell, Configurable {
-    typealias ConfigurationType = ViewModel
+    typealias ConfigurationType = MovieCellViewModel
     
     @IBOutlet weak var posterImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var releaseDateLabel: UILabel!
 
-    func configure(for viewModel: ViewModel) {
-        titleLabel.text = viewModel.movies.title
-        releaseDateLabel.text = viewModel.movies.releaseDate
+    func configure(for viewModel: MovieCellViewModel) {
+        titleLabel.text = viewModel.movie.title
+        releaseDateLabel.text = viewModel.movie.releaseDate
+        if let posterImageStr = viewModel.movie.posterPath {
+            posterImage.kf.setImage(with: URL.init(string: "https://image.tmdb.org/t/p/w500/\(posterImageStr)"))
+        }
     }
-
-
-
 }

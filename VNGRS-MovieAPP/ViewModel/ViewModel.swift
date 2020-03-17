@@ -9,19 +9,31 @@
 import Foundation
 import RxCocoa
 import RxSwift
+import RxDataSources
+import Swinject
+
+typealias MovieSection = AnimatableSectionModel<String, Movie>
 
 struct ViewModel {
+
     let searchText = PublishSubject<String>()
-    private var movieService: MovieService!
-    lazy var movie: Driver<[Movie]> = searchText
-        .throttle(0.3, scheduler: MainScheduler.instance)
+    private var movieService: MovieService = Container.shared.resolve(MovieService.self)!
+    lazy var movie: Driver<[MovieSection]> = searchText
+        .throttle(.milliseconds(300), latest: true, scheduler: MainScheduler.instance)
         .distinctUntilChanged()
         .flatMapLatest { [movieService] text in
-            movieService!.searchMovie(text: text)
-    }.asDriver(onErrorJustReturn: [])
+            movieService.searchMovie(text: text)
+    }
+    .map { [MovieSection(model: "", items: $0)] }
+    .asDriver(onErrorJustReturn: [])
+
     let movies: Movie
 
     init(movies: Movie) {
         self.movies = movies
+        
+    }
+    func cellViewModel(for movie: Movie) -> MovieCellViewModel {
+        MovieCellViewModel(movie: movie)
     }
 }
