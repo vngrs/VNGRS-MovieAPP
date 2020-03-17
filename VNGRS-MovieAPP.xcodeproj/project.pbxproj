@@ -50,6 +50,8 @@
 		B388BA4824201F70008A7E7A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B388BA4724201F70008A7E7A /* Movie.swift */; };
 		B388BA4C24201FFC008A7E7A /* MovieMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B388BA4B24201FFC008A7E7A /* MovieMock.swift */; };
 		B388BA4F2420B6E9008A7E7A /* SwInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B388BA4E2420B6E9008A7E7A /* SwInject.swift */; };
+		B388BA552420ECF2008A7E7A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B388BA542420ECF2008A7E7A /* ViewModel.swift */; };
+		B388BA572420F15E008A7E7A /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B388BA562420F15E008A7E7A /* MovieService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -111,6 +113,8 @@
 		B388BA4724201F70008A7E7A /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		B388BA4B24201FFC008A7E7A /* MovieMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMock.swift; sourceTree = "<group>"; };
 		B388BA4E2420B6E9008A7E7A /* SwInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwInject.swift; sourceTree = "<group>"; };
+		B388BA542420ECF2008A7E7A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		B388BA562420F15E008A7E7A /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,12 +165,13 @@
 		B388B9F5241FFC1A008A7E7A /* VNGRS-MovieAPP */ = {
 			isa = PBXGroup;
 			children = (
+				B388BA532420D861008A7E7A /* ViewModel */,
+				B388BA522420D859008A7E7A /* Controller */,
 				B388BA4D2420B6D6008A7E7A /* Extensions */,
 				B388BA4924201FB7008A7E7A /* Services */,
 				B388BA4624201F53008A7E7A /* Models */,
 				B388B9F6241FFC1A008A7E7A /* AppDelegate.swift */,
 				B388B9F8241FFC1A008A7E7A /* SceneDelegate.swift */,
-				B388B9FA241FFC1A008A7E7A /* ViewController.swift */,
 				B388B9FC241FFC1A008A7E7A /* Main.storyboard */,
 				B388B9FF241FFC1C008A7E7A /* Assets.xcassets */,
 				B388BA01241FFC1C008A7E7A /* LaunchScreen.storyboard */,
@@ -211,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				B388BA4A24201FC8008A7E7A /* MockService */,
+				B388BA562420F15E008A7E7A /* MovieService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -229,6 +235,22 @@
 				B388BA4E2420B6E9008A7E7A /* SwInject.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B388BA522420D859008A7E7A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B388B9FA241FFC1A008A7E7A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B388BA532420D861008A7E7A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B388BA542420ECF2008A7E7A /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,11 +325,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B388BA552420ECF2008A7E7A /* ViewModel.swift in Sources */,
 				B388B9FB241FFC1A008A7E7A /* ViewController.swift in Sources */,
 				B388BA4C24201FFC008A7E7A /* MovieMock.swift in Sources */,
 				B388B9F7241FFC1A008A7E7A /* AppDelegate.swift in Sources */,
 				B388BA4824201F70008A7E7A /* Movie.swift in Sources */,
 				B388BA4F2420B6E9008A7E7A /* SwInject.swift in Sources */,
+				B388BA572420F15E008A7E7A /* MovieService.swift in Sources */,
 				B388B9F9241FFC1A008A7E7A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
