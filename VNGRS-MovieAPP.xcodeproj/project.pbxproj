@@ -52,6 +52,7 @@
 		B388BA4F2420B6E9008A7E7A /* SwInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B388BA4E2420B6E9008A7E7A /* SwInject.swift */; };
 		B388BA552420ECF2008A7E7A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B388BA542420ECF2008A7E7A /* ViewModel.swift */; };
 		B388BA572420F15E008A7E7A /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B388BA562420F15E008A7E7A /* MovieService.swift */; };
+		B388BA592420FD4C008A7E7A /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B388BA582420FD4C008A7E7A /* BindableType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -115,6 +116,7 @@
 		B388BA4E2420B6E9008A7E7A /* SwInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwInject.swift; sourceTree = "<group>"; };
 		B388BA542420ECF2008A7E7A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B388BA562420F15E008A7E7A /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		B388BA582420FD4C008A7E7A /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				B388B9FF241FFC1C008A7E7A /* Assets.xcassets */,
 				B388BA01241FFC1C008A7E7A /* LaunchScreen.storyboard */,
 				B388BA04241FFC1C008A7E7A /* Info.plist */,
+				B388BA582420FD4C008A7E7A /* BindableType.swift */,
 			);
 			path = "VNGRS-MovieAPP";
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B388BA552420ECF2008A7E7A /* ViewModel.swift in Sources */,
+				B388BA592420FD4C008A7E7A /* BindableType.swift in Sources */,
 				B388B9FB241FFC1A008A7E7A /* ViewController.swift in Sources */,
 				B388BA4C24201FFC008A7E7A /* MovieMock.swift in Sources */,
 				B388B9F7241FFC1A008A7E7A /* AppDelegate.swift in Sources */,
