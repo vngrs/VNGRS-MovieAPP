@@ -8,7 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, BindableType {
+    var viewModel: ViewModel!
+
+    func bindViewModel() {
+        viewModel.movie
+            .drive(tableView.rx.items(cellIdentifier: "MovieCell")) { _, movie, cell in
+                
+        }
+    }
+
+    typealias ViewModelType = ViewModel
+
     @IBOutlet weak var tableView: UITableView!
     let searchController = UISearchController(searchResultsController: nil)
     var searchBar: UISearchBar {
@@ -18,6 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBarConfigure()
+        bindViewModel()
         // Do any additional setup after loading the view.
     }
 

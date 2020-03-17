@@ -11,9 +11,17 @@ import RxCocoa
 import RxSwift
 
 struct ViewModel {
-    let searchText: PublishSubject<String>
-    private var movieService: MovieService
-    lazy var movie: Driver<[Movie]> = searchText.flatMap { [movieService] text in
-        movieService.searchMovie(text: text)
+    let searchText = PublishSubject<String>()
+    private var movieService: MovieService!
+    lazy var movie: Driver<[Movie]> = searchText
+        .throttle(0.3, scheduler: MainScheduler.instance)
+        .distinctUntilChanged()
+        .flatMapLatest { [movieService] text in
+            movieService!.searchMovie(text: text)
     }.asDriver(onErrorJustReturn: [])
+    let movies: Movie
+
+    init(movies: Movie) {
+        self.movies = movies
+    }
 }
