@@ -47,6 +47,8 @@
 		B388BA3F2420132B008A7E7A /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA1E2420132A008A7E7A /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B388BA402420132B008A7E7A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA1F2420132A008A7E7A /* Alamofire.framework */; };
 		B388BA412420132B008A7E7A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B388BA1F2420132A008A7E7A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B388BA4824201F70008A7E7A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B388BA4724201F70008A7E7A /* Movie.swift */; };
+		B388BA4C24201FFC008A7E7A /* MovieMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B388BA4B24201FFC008A7E7A /* MovieMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -105,6 +107,8 @@
 		B388BA1D2420132A008A7E7A /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		B388BA1E2420132A008A7E7A /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		B388BA1F2420132A008A7E7A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		B388BA4724201F70008A7E7A /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		B388BA4B24201FFC008A7E7A /* MovieMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 		B388B9F5241FFC1A008A7E7A /* VNGRS-MovieAPP */ = {
 			isa = PBXGroup;
 			children = (
+				B388BA4924201FB7008A7E7A /* Services */,
+				B388BA4624201F53008A7E7A /* Models */,
 				B388B9F6241FFC1A008A7E7A /* AppDelegate.swift */,
 				B388B9F8241FFC1A008A7E7A /* SceneDelegate.swift */,
 				B388B9FA241FFC1A008A7E7A /* ViewController.swift */,
@@ -188,6 +194,30 @@
 				B388BA1B2420132A008A7E7A /* SwinjectAutoregistration.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B388BA4624201F53008A7E7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B388BA4724201F70008A7E7A /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B388BA4924201FB7008A7E7A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B388BA4A24201FC8008A7E7A /* MockService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B388BA4A24201FC8008A7E7A /* MockService */ = {
+			isa = PBXGroup;
+			children = (
+				B388BA4B24201FFC008A7E7A /* MovieMock.swift */,
+			);
+			path = MockService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +293,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B388B9FB241FFC1A008A7E7A /* ViewController.swift in Sources */,
+				B388BA4C24201FFC008A7E7A /* MovieMock.swift in Sources */,
 				B388B9F7241FFC1A008A7E7A /* AppDelegate.swift in Sources */,
+				B388BA4824201F70008A7E7A /* Movie.swift in Sources */,
 				B388B9F9241FFC1A008A7E7A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
