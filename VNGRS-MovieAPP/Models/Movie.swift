@@ -9,8 +9,20 @@
 import Foundation
 import RxDataSources
 
+struct Movies: Codable {
+    let page, totalResults, totalPages: Int
+    let results: [Movie]
+
+    enum CodingKeys: String, CodingKey {
+        case page
+        case totalResults = "total_results"
+        case totalPages = "total_pages"
+        case results
+    }
+}
+
 struct Movie: Codable {
-    let id: String
+    let id: Int
     let popularity: Double
     let voteCount: Int
     let posterPath: String?
@@ -30,7 +42,7 @@ struct Movie: Codable {
 }
 
 extension Movie: IdentifiableType {
-    var identity: String { id }
+    var identity: String { "\(id)" }
 
     typealias Identity = String
 }

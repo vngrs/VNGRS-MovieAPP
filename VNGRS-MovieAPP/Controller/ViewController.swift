@@ -11,9 +11,10 @@ import Rswift
 import NSObject_Rx
 class ViewController: UIViewController, BindableType {
 
+
     typealias ViewModelType = ViewModel
     @IBOutlet private weak var tableView: UITableView!
-    var viewModel: ViewModel! = ViewModel(movies: MovieMock().movie)
+    var viewModel: ViewModel! = ViewModel()
 
     let searchController = UISearchController(searchResultsController: nil)
     var searchBar: UISearchBar {
@@ -32,9 +33,12 @@ class ViewController: UIViewController, BindableType {
 
 
     func bindViewModel() {
+
         viewModel.movie
             .drive(tableView.rx.items(dataSource: dataSource))
             .disposed(by: rx.disposeBag)
+
+
         searchBar.rx.text
             .orEmpty
             .bind(to: viewModel.searchText)

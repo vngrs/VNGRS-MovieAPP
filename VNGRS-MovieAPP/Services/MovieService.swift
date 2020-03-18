@@ -11,6 +11,10 @@ import RxSwift
 import RxMoya
 import Moya
 
+struct MovieDictionary<T: Decodable>: Decodable {
+    let results: [T]
+}
+
 protocol MovieService {
     func searchMovie(text: String) -> Single<[Movie]>
 }
@@ -26,11 +30,10 @@ class MovieMockService: MovieService {
 
 }
 class MovieRealServices: MovieService {
+    let provider = MoyaProvider<MovieAPI>()
     func searchMovie(text: String) -> Single<[Movie]> {
-        return MoyaProvider<MovieAPI>().rx.request(.searchMovies(query: text, page: 1)).map {
-            try JSONDecoder().decode([Movie].self, from: $0.data)
+        return provider.rx.request(.searchMovies(query: text, page: 1)).map { response in
+            try JSONDecoder().decode(Movies.self, from: response.data).results
         }
     }
-
-
 }

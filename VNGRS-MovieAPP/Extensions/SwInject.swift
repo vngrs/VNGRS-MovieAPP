@@ -17,9 +17,15 @@ extension Container {
         return container
 
     }()
-    //TODO: register real services.
+    #if MOCK
     private static func registerMockServices(into container: Container) {
         container.autoregister(MovieMock.self, initializer: MovieMock.init)
         container.autoregister(MovieService.self, initializer: MovieMockService.init)
     }
+    #else
+
+    private static func registerMockServices(into container: Container) {
+        container.autoregister(MovieService.self, initializer: MovieRealServices.init)
+    }
+    #endif
 }
